@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de CSS Dinâmico com JS</title>
+
+    <!-- CSS para estilo inicial -->
+    <style>
+        /* Estilo para o botão */
+        #botao {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Estilo da imagem */
+        #imagem {
+            width: 200px;
+            transition: transform 0.3s;
+        }
+
+        /* Estilo do parágrafo */
+        #paragrafo {
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título da página -->
+    <h1 id="titulo">Passe o mouse aqui</h1>
+
+    <!-- Parágrafo que muda de cor ao clique -->
+    <p id="paragrafo">Clique neste texto para mudar a cor</p>
+
+    <!-- Botão que muda de cor ao clicar -->
+    <button id="botao">Clique para mudar minha cor</button>
+
+    <!-- Imagem que muda ao passar o mouse -->
+    <br><br>
+    <img id="imagem" src="https://via.placeholder.com/200x200.png?text=Imagem+1" alt="Imagem">
+
+    <!-- Script JavaScript para manipulações dinâmicas -->
+    <script>
+        // Seleciona o título
+        const titulo = document.getElementById("titulo");
+
+        // Quando o mouse passa sobre o título, muda a cor
+        titulo.addEventListener("mouseover", () => {
+            titulo.style.color = "green";
+        });
+
+        // Quando o mouse sai, volta à cor original
+        titulo.addEventListener("mouseout", () => {
+            titulo.style.color = "";
+        });
+
+        // Seleciona o parágrafo
+        const paragrafo = document.getElementById("paragrafo");
+        let corOriginal = paragrafo.style.color;
+        let clicado = false;
+
+        // Alterna a cor ao clicar
+        paragrafo.addEventListener("click", () => {
+            if (!clicado) {
+                paragrafo.style.color = "red";
+                clicado = true;
+            } else {
+                paragrafo.style.color = corOriginal;
+                clicado = false;
+            }
+        });
+
+        // Seleciona o botão
+        const botao = document.getElementById("botao");
+
+        // Muda a cor de fundo do botão ao clicar
+        botao.addEventListener("click", () => {
+            botao.style.backgroundColor = botao.style.backgroundColor === "lightblue" ? "red" : "lightblue";
+        });
+
+        // Seleciona a imagem
+        const imagem = document.getElementById("imagem");
+        const imagem1 = "imagens/spiderman.jpeg";
+        const imagem2 = "imagens/lala.jpg";
+
+        // Troca a imagem ao passar o mouse
+        imagem.addEventListener("mouseover", () => {
+            imagem.src = imagem2;
+        });
+
+        // Volta para a imagem original ao tirar o mouse
+        imagem.addEventListener("mouseout", () => {
+            imagem.src = imagem1;
+        });
+    </script>
+
+</body>
+</html>

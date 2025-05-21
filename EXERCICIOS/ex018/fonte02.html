@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family:'droid' ;
+            src: url(idroid.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+
+            /*tipos de format
+            opentype
+            truetype
+            embedded-opentype
+            truetype-aat
+            svg
+             */
+        
+        }
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: droid;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        p {
+            font-family: 'droid';
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, mundooo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquam, enim exercitationem ullam, odit sequi maiores pariatur repudiandae doloribus est culpa reprehenderit neque vero placeat quidem laudantium rerum debitis id!</p>
+    
+</body>
+</html>

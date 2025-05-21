@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'droid' ;
+    src: url(idroid.otf) format('opentype');
+    
+    font-style: normal; }
+body {
+
+    background-color: beige;
+    
+}
+header {
+    background-image:linear-gradient(#37A551, #3D7A4B,#35503B, #2A332C );
+    padding-top: 5px;
+    padding-bottom: 45px;
+    margin: -20px;
+    box-shadow: 4px 4px 4px #38415593;
+    }
+
+header > p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #b6ecc3;
+    padding: 10px;
+    transition-duration: 1s;
+    font-weight: bold;
+    
+}
+nav {
+    margin-bottom: -35px;
+    padding-left: 30px;
+    
+}
+
+a:hover {
+    background-color: #37ce5ab0;
+    color: black;
+    border-radius: 5px;
+}
+main {
+    background-color: white;
+    margin: auto;
+    padding: auto;
+    
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 4px 4px 4px #38415593;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px ;
+}
+
+main > h2 {
+    font-size: 25px;
+    font-family: droid;
+    padding: 10px;
+    text-align: justify;
+    color:#335341 ;
+    
+}
+
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.8;
+    text-indent: 30px;
+}
+
+h3 {
+    font-family:droid;
+    text-align: justify;
+    color: #347150;
+    padding-left: 15px;
+    background-image:linear-gradient(to right, #2BD5A2, #caeedb00);
+    margin-bottom:-15px;
+    font-size: 1.3em;
+}
+.destaque {
+    font-weight: bold; color:#225c3d ;
+}
+
+.nome{
+    font-weight: bold;
+    color:#335341 ;
+    background-color:#2BD5A2 ;
+}
+aside {
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2A332C;
+}
+
+main img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+.bug {
+    width: 50%;
+}
+div {
+    background-color: rgb(103, 243, 187);
+    padding: auto;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 700px; width: 100%;
+    box-shadow: 4px 4px 4px #38415593;
+    border-radius: 10px;
+    text-indent: 30px;
+}
+h4 {
+    background-color: #376d50;
+    color: white;
+    padding: 10px;
+    margin-bottom: -5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-indent: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    margin: 10px;
+    padding: 10px;
+}
+div > U {
+    padding: 10px;
+    columns: 2;
+    
+}
+footer {
+    text-align: center;
+    color: white;
+    background-color: #2A332C;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Wallpoet&display=swap');*/
